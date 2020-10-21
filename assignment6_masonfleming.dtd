@@ -1,0 +1,15 @@
+<!ELEMENT assignment6_masonfleming (employee_table,works_table,company_table)>
+<!ELEMENT employee_table (employee*)>
+<!ELEMENT employee (firstname,middleinitial,lastname,street,city,gender)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT middleinitial (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT works_table (worker*)>
+<!ELEMENT worker (firstname,middleinitial,lastname,companyname,salary)>
+<!ELEMENT companyname (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT company_table (company*)>
+<!ELEMENT company (companyname, city)>
